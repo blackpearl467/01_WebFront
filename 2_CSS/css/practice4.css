@@ -1,0 +1,50 @@
+div {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.container-1 {
+    display: flex;
+
+    width: 800px;
+    height: 500px;
+
+    flex-direction: column;
+}
+
+.header-1, .footer-1 {
+    flex-basis: 20%;
+    background-color: green;
+}
+
+.body-1 {
+    flex-basis: 60%;
+
+    display: flex;
+}
+.body1-1 {
+    flex-basis: 25%;
+    background-color: yellow;
+}
+.body1-2 {
+    flex-basis: 75%;
+    background-color: orange;
+    
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+
+.body2-1 {
+    width: 30%; height: 50%;
+    background-color: red;
+}
+.body2-2 {
+    width: 30%; height: 50%;
+    background-color: red;
+}
+.body2-3 {
+    width: 30%; height: 50%;
+    background-color: red;
+}

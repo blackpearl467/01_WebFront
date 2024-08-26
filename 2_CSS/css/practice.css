@@ -1,0 +1,51 @@
+div {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* 문제1*/
+.container-1 {
+    /* 가장 바깥쪽 부모 */
+    display: flex;
+
+    width: 800px;
+    height: 500px;
+
+    flex-direction: column;
+}
+
+.header-1, .footer-1 {
+    background-color: gray;
+    flex-basis: 20%;
+}
+
+.body-1 {
+    /*
+    body-item-1,2,3 의 부모이면서
+    container-1 의 자식
+    */
+    flex-basis: 60%; /* 자식 속성 */
+
+    display: flex; /* 부모 전용 속성 */
+    /* flex-direction: row */
+}
+
+.body-item-1 {
+    background-color: skyblue;
+    flex-basis: 30%;
+}
+.body-item-2 {
+    background-color: tomato;
+    flex-basis: 50%;
+}
+.body-item-3 {
+    background-color: antiquewhite;
+    flex-basis: 20%;
+}
+
+/* 
+.body-1 > div:nth-of-type(1) {
+    background-color: skyblue;
+    flex-basis: 30%;
+} 로 적어도 위와 똑같게 나옴
+*/

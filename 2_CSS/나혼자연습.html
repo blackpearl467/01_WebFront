@@ -1,0 +1,73 @@
+<main>
+
+  <header>
+    <section>
+      <a href="#">
+        <img src="링크" id="homekey">
+      </a>
+    </section>
+    <section>
+      <section class="search-area">
+        <form action="#" name="search-form"><!--action은양식제출해야할때입력-->
+          <fieldset>
+            <input type=search id="query" name="query" placeholder="검색어를 입력해주세요." 
+            autocomplete="off"></input><!--id인고유한이름말고데이터도전송해야해서name값도입력
+            autocomplete:자동완성기능-->
+            <button><!--이미지링크복붙해오면됨--></button>
+          </fieldset>
+        </form>
+      </section>
+    </section>
+    <section></section>
+  </header>
+
+  <nav><!--순서없는-->
+    <ul>
+      <li><a href="#">공지사항</a></li>
+      <li><a href="#">자유게시판</a></li>
+      <li><a href="#">질문게시판</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">1:1문의</a></li>
+    </ul>
+  </nav>
+
+  <section class="content"><!--본문2개박스로나뉨--><!--section태그클래스이름짓기-->
+    <section class-content-1></section>
+    <section class-content-2><!--fieldset태그를form태그로묶음-->
+      <form action="#" name="loginbox"><!--action,name이름짓기-->
+        <fieldset id="loginbox1-1">
+          <section><!--name으로설정-->
+            <input type="text" name="ID" placeholder="아이디">
+            <input type="password" name="PW" placeholder="비밀번호">
+          </section>
+          <section>
+            <button>로그인</button>
+          </section>
+        </fieldset>
+
+        <label>
+          <input type="checkbox" name="idsave">아이디 저장
+        </label>
+      </form><!--fieldset태그끝-->
+
+      <section id="signup"><!--id이름지정해주기-->
+        <a href="#">회원가입</a>
+        <span>|</span>
+        <a href="#">ID/PW 찾기</a>
+      </section>
+    </section>
+  </section>
+</main><!--크기지정할거라footer태그안넣음-->
+
+<footer>
+  <p>Copyright &copy; KH Information E I E-class</p>
+  <section><!--section태그열고자식태그나누기-->
+    <a href="#">프로젝트 소개</a>
+    <span>|</span>
+    <a href="#">이용약관</a>
+    <span>|</span>
+    <a href="#">개인정보처리방침</a>
+    <span>|</span>
+    <a href="#">고객센터</a>
+  </section>
+</footer>
